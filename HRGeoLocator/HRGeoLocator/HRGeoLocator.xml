@@ -1,0 +1,653 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HRGeoLocator</name>
+    </assembly>
+    <members>
+        <member name="T:HRGeoLocator.Controllers.HRGeonameController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Controllers.HRGeonameController.#ctor(HRGeoLocator.Services.Interface.IHRGeonameService)">
+            <summary>
+            Constructor with GeoService
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:HRGeoLocator.Controllers.HRGeonameController.GetGeonames(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HRGeoLocator.Controllers.HRWebCamsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Controllers.HRWebCamsController.#ctor(HRGeoLocator.Services.Interface.IWebCamService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:HRGeoLocator.Controllers.HRWebCamsController.Get(System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="wgs84_lat"></param>
+            <param name="wgs84_lon"></param>
+            <param name="radiusInKilometers"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HRGeoLocator.Models.Geoname">
+            <summary>
+            Item retrieving by Geonmae service
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.adminCode1">
+            <summary>
+            Local code admin.
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.lng">
+            <summary>
+            Longitude
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.geonameId">
+            <summary>
+            ID in geoname service
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.toponymName">
+            <summary>
+            topony name in geoname service
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.countryId">
+            <summary>
+            ID of country (ISO)
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.fcl">
+            <summary>
+            No idea :-(
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.population">
+            <summary>
+            Amount of population (estimated in date unknown)
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.countryCode">
+            <summary>
+            The country code
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.name">
+            <summary>
+            Name of country
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.fclName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.countryName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.fcodeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.adminName1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.lat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Geoname.fcode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.GeoNameRootObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.GeoNameRootObject.totalResultsCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.GeoNameRootObject.geonames">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Current.icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Current.thumbnail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Current.preview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Current.toenail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Day">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Day.available">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Day.link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Day.embed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Daylight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Daylight.icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Daylight.thumbnail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Daylight.preview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Daylight.toenail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Icon.width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Icon.height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Image">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Image.current">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Image.daylight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Image.sizes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Image.update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Lifetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Lifetime.available">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Lifetime.link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Lifetime.embed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Live">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Live.available">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Live.embed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Location">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.city">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.region">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.region_code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.country">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.country_code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.continent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.continent_code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.latitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.longitude">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Location.timezone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Month">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Month.available">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Month.link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Month.embed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Player">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Player.live">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Player.day">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Player.month">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Player.year">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Player.lifetime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Preview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Preview.width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Preview.height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.WebCamsTravelRootObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.WebCamsTravelRootObject.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.WebCamsTravelRootObject.result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Sizes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Sizes.icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Sizes.thumbnail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Sizes.preview">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Sizes.toenail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Thumbnail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Thumbnail.width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Thumbnail.height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Toenail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Toenail.width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Toenail.height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Webcam">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.image">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.location">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Webcam.player">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Result">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Result.offset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Result.limit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Result.total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Result.webcams">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Models.Year">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Year.available">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Year.link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:HRGeoLocator.Models.Year.embed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HRGeoLocator.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:HRGeoLocator.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HRGeoLocator.Services.HRGeonameService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Services.HRGeonameService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:HRGeoLocator.Services.HRGeonameService.GetGeonamesAsync(System.String)">
+            <summary>
+            First version of proxy on geoname secureservice
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HRGeoLocator.Services.Interface.IHRGeonameService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Services.Interface.IHRGeonameService.GetGeonamesAsync(System.String)">
+            <summary>
+            Proxy on searchJSON
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HRGeoLocator.Services.Interface.IWebCamService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Services.Interface.IWebCamService.GetWebCamsNearAsync(System.Single,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="wgs84_lat"></param>
+            <param name="wgs84_lon"></param>
+            <param name="radiusInKilometers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HRGeoLocator.Services.Interface.WebCamService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:HRGeoLocator.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:HRGeoLocator.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HRGeoLocator.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container. 
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:HRGeoLocator.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
